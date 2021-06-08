@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWITTER CLONE USING BOOTSTRAP</title>
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="images/twitter-logo.png" type="image/x-icon">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- My css -->
+<link rel="stylesheet" href="css/style.css">
+<!-- Fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container-fluid sticky-top bg-white head">
+        <div class="headBar">
+            <div class="logo">
+                <a href="index.html"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="home-head">
+                <a href="#">Home</a>
+                <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <div class="side-post-input desktop">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="search twitter">
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for the child element to the parent element in the head bar -->
+    <div class="container-fluid">
+        <div class="twitter-body">
+            <div class="menu">
+                <div>
+                    <span>
+                        <i class="fas fa-home"></i>
+                        <a href="#" class="desktop">Home</a>
+                    </span>
+                </div>
+                <div class="desktop">
+                    <span>
+                        <i class="fas fa-hashtag"></i>
+                        <a href="#" class="desktop">Explore</a>
+                    </span>
+                </div>
+                <!-- Only shown on mobile 
+                to replace search input in desktop-->
+                <div class="mobile">
+                    <span>
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <!-- ends here -->
+                <div>
+                    <span>
+                        <i class="fas fa-bell"></i>
+                        <a href="#" class="desktop">Notifications</a>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                        <a href="#" class="desktop">Messages</a>
+                    </span>
+                </div>
+                <div class="desktop">
+                    <span>
+                        <i class="fas fa-bookmark"></i>
+                        <a href="#" class="desktop">Bookmarks</a>
+                    </span>
+                </div>
+                <div class="desktop">
+                    <span>
+                        <i class="fas fa-file-alt"></i>
+                        <a href="#" class="desktop">Lists</a>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fas fa-user"></i>
+                        <a href="#" class="desktop">Profile</a>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <i class="fas fa-ellipsis-h  circle-it"></i>
+                        <a href="#" class="desktop">More</a>
+                    </span>
+                </div>
+                <div class="desk-tweet-btn desktop">
+                    <a href="#">Tweet</a>
+                </div>
+                <div class="mobile-tweet-btn mobile">
+                    <a href="#"><i class="fas fa-feather-alt"></i></a>
+                </div>
+
+                <div class="user-account desktop">
+                    <div class="user">
+                        <img src="images/pic.jpg" alt="tunde picture" width="100%">
+                        <span>
+                            <h5>Tunde Alan</h5>
+                            <p>@tundealan_</p>
+                        </span>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+
+                <img src="images/pic.jpg" alt="tunde picture" width="100%" class="userImg mobile">
+                
+
+            </div>
+
+
+            <div class="home-body">
+                <div class="home-mind">
+                    <div class="imgBx">
+                        <img src="images/pic.jpg" alt="tunde photo" width="100%">
+                    </div>
+                    <div class="Input-Bx">
+                        <input type="text" placeholder="whats happening">
+                        <div class="visible-on-focus">
+                            <a href="#"><i class="fas fa-globe"></i> Everyone can reply</a>
+                        </div>
+                        <hr>
+                        <div class="mind-attach">
+                            <span>
+                                <i class="fas fa-image"></i>
+                                <i class="fas fa-gif">gif</i>
+                                <i class="fas fa-align-left"></i>
+                                <i class="fas fa-smile"></i>
+                                <i class="fas fa-calendar"></i>
+                            </span>
+                            <div class="mind-attach-btn">
+                                <a href="#">Tweet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="posts-1">
+                        <div class="imgBx">
+                            <img src="images/pic1.jpg" alt="" width="100%">
+                            <!-- creating tooltip that shows a user provile when
+                        the mouse hovers on the user image in the post -->
+                        <div class="user-tooltip">
+                            <div class="img-follow-flex">
+                                <div class="acc-Bx">
+                                    <img src="images/pic1.jpg" alt="tunde photo" width="100%">
+                                    <span>
+                                        <a href="#">Hannah Sreer</a>
+                                        <p>@hanns</p>
+                                    </span>
+                                </div>
+                                <div class="follow-btn"><a href="#">follow</a></div>
+                            </div>
+                            <div class="profile-bio">
+                                <p>Writer | Front End | I speak these basic languages: CSS, JavaScript, bootstrap
+                                    Wordpress and PHP.
+                                </p>
+                            </div>
+                            <div class="follow-stats">
+                                <div class="stats">
+                                    <h5>Following</h5>
+                                    <h6>1,048</h6>
+                                </div>
+                                <div class="stats">
+                                    <h5>Followers</h5>
+                                    <h6>2,500</h6>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="circle"></div>
+                                <p>Followed by Abubakar, Nwayanwu
+                                    Oke Alami and 4 others you know
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tooltip ends -->
+                            <span>
+                                <a href="#">Hannah Sreer</a>
+                                <p>@hanns</p>
+                            </span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="text-post">
+                        <p>
+                            Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit.
+                            Vero tempore similique doloremque officiis amet 
+                            rem nihil illo magni sint nostrum voluptate
+                            tenetur consequatur, est dolorem culpa nesciunt in eum saepe.
+                        </p>
+                    </div>
+                    <div class="post-gadget">
+                        <i class="fas fa-comment"></i>
+                        <i class="fas fa-retweet"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+
+                <!-- posts second -->
+                <div class="posts">
+                    <div class="posts-1">
+                        <div class="imgBx">
+                            <img src="images/pic1.jpg" alt="" width="100%">
+                            <!-- creating tooltip that shows a user provile when
+                        the mouse hovers on the user image in the post -->
+                        <div class="user-tooltip">
+                            <div class="img-follow-flex">
+                                <div class="acc-Bx">
+                                    <img src="images/pic1.jpg" alt="tunde photo" width="100%">
+                                    <span>
+                                        <a href="#">Hannah Sreer</a>
+                                        <p>@hanns</p>
+                                    </span>
+                                </div>
+                                <div class="follow-btn"><a href="#">follow</a></div>
+                            </div>
+                            <div class="profile-bio">
+                                <p>Writer | Front End | I speak these basic languages: CSS, JavaScript, bootstrap
+                                    Wordpress and PHP.
+                                </p>
+                            </div>
+                            <div class="follow-stats">
+                                <div class="stats">
+                                    <h5>Following</h5>
+                                    <h6>1,048</h6>
+                                </div>
+                                <div class="stats">
+                                    <h5>Followers</h5>
+                                    <h6>2,500</h6>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="circle"></div>
+                                <p>Followed by Abubakar, Nwayanwu
+                                    Oke Alami and 4 others you know
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tooltip ends -->
+                            <span>
+                                <a href="#">Hannah Sreer</a>
+                                <p>@hanns</p>
+                            </span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="text-post">
+                        <p>
+                            Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit.
+                            Vero tempore similique doloremque officiis amet 
+                            rem nihil illo magni sint nostrum voluptate
+                            tenetur consequatur, est dolorem culpa nesciunt in eum saepe.
+                        </p>
+                    </div>
+                    <div class="post-gadget">
+                        <i class="fas fa-comment"></i>
+                        <i class="fas fa-retweet"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+
+                <!-- posts third -->
+                <div class="posts">
+                    <div class="posts-1">
+                        <div class="imgBx">
+                            <img src="images/pic1.jpg" alt="" width="100%">
+                            <!-- creating tooltip that shows a user provile when
+                        the mouse hovers on the user image in the post -->
+                        <div class="user-tooltip">
+                            <div class="img-follow-flex">
+                                <div class="acc-Bx">
+                                    <img src="images/pic1.jpg" alt="tunde photo" width="100%">
+                                    <span>
+                                        <a href="#">Hannah Sreer</a>
+                                        <p>@hanns</p>
+                                    </span>
+                                </div>
+                                <div class="follow-btn"><a href="#">follow</a></div>
+                            </div>
+                            <div class="profile-bio">
+                                <p>Writer | Front End | I speak these basic languages: CSS, JavaScript, bootstrap
+                                    Wordpress and PHP.
+                                </p>
+                            </div>
+                            <div class="follow-stats">
+                                <div class="stats">
+                                    <h5>Following</h5>
+                                    <h6>1,048</h6>
+                                </div>
+                                <div class="stats">
+                                    <h5>Followers</h5>
+                                    <h6>2,500</h6>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="circle"></div>
+                                <p>Followed by Abubakar, Nwayanwu
+                                    Oke Alami and 4 others you know
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tooltip ends -->
+                            <span>
+                                <a href="#">Hannah Sreer</a>
+                                <p>@hanns</p>
+                            </span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="video-post">
+                        <video controls autoplay>
+                            <source src="images/smile.mp4" type="video/mp4">
+                            <source src="images/smile.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div class="post-gadget">
+                        <i class="fas fa-comment"></i>
+                        <i class="fas fa-retweet"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+                
+                <!-- post fourth -->
+                <div class="posts">
+                    <div class="posts-1">
+                        <div class="imgBx">
+                            <img src="images/pic2.jpg" alt="" width="100%">
+                            <!-- creating tooltip that shows a user provile when
+                        the mouse hovers on the user image in the post -->
+                        <div class="user-tooltip">
+                            <div class="img-follow-flex">
+                                <div class="acc-Bx">
+                                    <img src="images/pic2.jpg" alt="tunde photo" width="100%">
+                                    <span>
+                                        <a href="#">Bebe Rere</a>
+                                        <p>@bebe</p>
+                                    </span>
+                                </div>
+                                <div class="follow-btn"><a href="#">follow</a></div>
+                            </div>
+                            <div class="profile-bio">
+                                <p>Writer | Front End | I speak these basic languages: CSS, JavaScript, bootstrap
+                                    Wordpress and PHP.
+                                </p>
+                            </div>
+                            <div class="follow-stats">
+                                <div class="stats">
+                                    <h5>Following</h5>
+                                    <h6>1,048</h6>
+                                </div>
+                                <div class="stats">
+                                    <h5>Followers</h5>
+                                    <h6>2,500</h6>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <div class="circle"></div>
+                                <p>Followed by Abubakar, Nwayanwu
+                                    Oke Alami and 4 others you know
+                                </p>
+                            </div>
+                        </div>
+                        <!-- tooltip ends -->
+                            <span>
+                                <a href="#">Bebe Rere</a>
+                                <p>@bebe</p>
+                            </span>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="video-post">
+                        <video controls autoplay>
+                            <source src="images/smile.mp4" type="video/mp4">
+                            <source src="images/smile.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div class="post-gadget">
+                        <i class="fas fa-comment"></i>
+                        <i class="fas fa-retweet"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-upload"></i>
+                    </div>
+                </div>
+
+            </div> <!--home body end tag-->
+
+            
+
+
+
+
+            <!-- Side posts begins here -->
+            <div class="side-posts desktop">
+                <div class="trending">
+                    <div class="boxes">
+                        <h1>Trends for you</h1>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="boxes">
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Sports</a>
+                                <a href="#">Trending</a>
+                            </span>
+                            <h5>#MorouhinoSack</h5>
+                            <a href="#">12.8 Tweets</a>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="boxes">
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Politics</a>
+                                <a href="#">Trending</a>
+                            </span>
+                            <h5>#NigeriaInsecurity</h5>
+                            <a href="#">12M Tweets</a>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="boxes">
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Entertainment</a>
+                                <a href="#">Trending</a>
+                            </span>
+                            <h5>#BabaIjeshaSaga</h5>
+                            <a href="#">34.8K Tweets</a>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="boxes">
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Entertainment</a>
+                                <a href="#">Trending</a>
+                            </span>
+                            <h5>#ToyinLizzyFightDirty</h5>
+                            <a href="#">12.8 Tweets</a>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="boxes">
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Business</a>
+                                <a href="#">Trending</a>
+                            </span>
+                            <h5>#Tesla</h5>
+                            <a href="#">12.8 Tweets</a>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="boxes">
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Religion</a>
+                                <a href="#">Trending</a>
+                            </span>
+                            <h5>#Faith</h5>
+                            <a href="#">12.8 Tweets</a>
+                        </div>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="boxes">
+                        <a href="#">Show more</a>
+                    </div>
+                </div>
+                <!-- Trending ends -->
+
+                <div class="suggestions">
+                    <!-- first box -->
+                    <div class="boxes">
+                        <h1>Who to follow</h1>
+                    </div>
+                    <!-- second box -->
+                    <div class="boxes">
+                        <div class="imgBx">
+                            <img src="images/pic2.jpg" alt="woman in picture" width="100%">
+                        </div>
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Ronnie</a>
+                                <a href="#">Lammie</a>
+                            </span>
+                            <h5>@ronnie5</h5>
+                            <a href="#">HR Manager </a>
+                        </div>
+                        <a href="#" class="follow-btn">Follow</a>
+                    </div>
+                    <!-- third box -->
+                    <div class="boxes">
+                        <div class="imgBx">
+                            <img src="images/pic3.jpg" alt="woman in picture" width="100%">
+                        </div>
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Janine</a>
+                                <a href="#">Hammad</a>
+                            </span>
+                            <h5>@janine</h5>
+                            <a href="#">Artist </a>
+                        </div>
+                        <a href="#" class="follow-btn">Follow</a>
+                    </div>
+                    <!-- fourth box -->
+                    <div class="boxes">
+                        <div class="imgBx">
+                            <img src="images/pic1.jpg" alt="woman in picture" width="100%">
+                        </div>
+                        <div class="uptweets">
+                            <span>
+                                <a href="#">Hannah</a>
+                                <a href="#">Sreer</a>
+                            </span>
+                            <h5>@hanns</h5>
+                            <a href="#">Model </a>
+                        </div>
+                        <a href="#" class="follow-btn">Follow</a>
+                    </div>
+                </div>
+                <!-- Suggestions ends -->
+
+                <footer>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie policy</a>
+                    <a href="#">Ads info</a>
+                    <a href="#">More <i class="fas fa-ellipsis-h"></i></a>
+                    <p>&copy; 2021 Twitter, Inc.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Script Js -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
